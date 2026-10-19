@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Result</title>
+
+<link rel="stylesheet" href="result.css">
+</head>
+
+<body>
+
+<div class="result-card">
+
+<h1>🎉 Quiz Completed</h1>
+
+<h2 id="score"></h2>
+
+<a href="index.html">
+
+<button>Back Home</button>
+
+</a>
+
+</div>
+
+<script>
+
+let result = null;
+
+try {
+  result = JSON.parse(localStorage.getItem("quizResult"));
+} catch (error) {
+  result = null;
+}
+
+const scoreEl = document.getElementById("score");
+
+if (!result) {
+  scoreEl.textContent = "No result to show yet. Attempt a quiz first.";
+} else {
+  scoreEl.textContent =
+    `${result.title}: You Scored ${result.score} / ${result.total}`;
+}
+
+</script>
+
+</body>
+</html>

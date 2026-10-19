@@ -1,0 +1,32 @@
+body{
+margin:0;
+font-family:Poppins,sans-serif;
+background:#f5fdff;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.result-card{
+background:white;
+padding:50px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 15px 30px rgba(0,0,0,.1);
+}
+
+button{
+padding:15px 30px;
+background:#caad88;
+color:white;
+border:none;
+border-radius:10px;
+font-size:18px;
+cursor:pointer;
+margin-top:20px;
+}
+
+button:hover{
+background:#c8a585;
+}

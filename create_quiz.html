@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Quiz</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="create.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+<i class="fa-solid fa-graduation-cap"></i>
+QuizMaker
+</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="quiz_list.html">Quiz List</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="create-container">
+
+<h1>Create New Quiz</h1>
+
+<form id="quizForm">
+
+<input
+type="text"
+id="quizTitle"
+placeholder="Quiz Title"
+required>
+
+<select id="category">
+
+<option>HTML</option>
+
+<option>CSS</option>
+
+<option>JavaScript</option>
+
+<option>Python</option>
+
+<option>Java</option>
+
+</select>
+
+<input
+type="number"
+id="timer"
+min="1"
+placeholder="Quiz Timer (Minutes)"
+required>
+
+<hr>
+
+<h2>Add Question</h2>
+
+<input
+type="text"
+id="question"
+placeholder="Question">
+
+<input
+type="text"
+id="option1"
+placeholder="Option 1">
+
+<input
+type="text"
+id="option2"
+placeholder="Option 2">
+
+<input
+type="text"
+id="option3"
+placeholder="Option 3">
+
+<input
+type="text"
+id="option4"
+placeholder="Option 4">
+
+<select id="correct">
+
+<option value="0">Correct Option 1</option>
+
+<option value="1">Correct Option 2</option>
+
+<option value="2">Correct Option 3</option>
+
+<option value="3">Correct Option 4</option>
+
+</select>
+
+<button
+type="button"
+id="addQuestion">
+
+Add Question
+
+</button>
+
+<div id="questionList"></div>
+
+<button
+type="submit">
+
+Save Quiz
+
+</button>
+
+</form>
+
+</section>
+
+<script src="create.js"></script>
+
+</body>
+</html>
